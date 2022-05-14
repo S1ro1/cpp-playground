@@ -3,11 +3,17 @@
 
 int main(void) {
   Fraction a = Fraction(4, 2);
-  Fraction b = Fraction(2, 3);
 
-  Fraction c = a - b;
+  a = a + 1;
+  a.printFraction();
   
-  c.printFraction();
+  a = a - 1;
+  a.printFraction();
 
+  a = a * 2;
+  a.printFraction();
+   
+  a = a / 2;
+  a.printFraction();
   return 0;
 }

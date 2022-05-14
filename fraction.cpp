@@ -106,4 +106,22 @@ Fraction Fraction::operator-(const Fraction &obj) {
   }
 }
 
+Fraction Fraction::operator*(int a) {
+  return Fraction(numerator * a, denominator);
+}
 
+Fraction Fraction::operator/(int a) {
+  return Fraction(numerator, denominator * a);
+}
+
+Fraction Fraction::operator+(int a) {
+  Fraction tmp1 = Fraction(numerator, denominator);
+  Fraction tmp2 = Fraction(a, 1);
+  return tmp1 + tmp2;
+}
+
+Fraction Fraction::operator-(int a) {
+  Fraction tmp1 = Fraction(numerator, denominator);
+  Fraction tmp2 = Fraction(a, 1);
+  return tmp1 - tmp2;
+}
