@@ -2,13 +2,12 @@
 #include <iostream>
 
 int main(void) {
-  Fraction a = Fraction();
+  Fraction a = Fraction(4, 2);
+  Fraction b = Fraction(2, 3);
 
-  Fraction b = Fraction(5, 3);
+  Fraction c = a - b;
   
-  a.printFraction();
-  std::cout << "------------------" << std::endl;
-  b.printFraction();
+  c.printFraction();
 
   return 0;
 }
